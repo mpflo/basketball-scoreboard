@@ -34,7 +34,7 @@ function saveMatch() {
     const home = scoreboards[0].textContent
     const guest = scoreboards[1].textContent
 
-    const result = "Home: " + home + " X " + "Guest: " + guest
+    const result = "Home: " + home + " X " + "Guest: " + guest + " | "
 
     matches.textContent += result
 
