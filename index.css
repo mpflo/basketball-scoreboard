@@ -1,8 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    background-color: #0C4A6E;
+}
+
+
+#scoreboards {
+    width: 100%;
+}
+#scoreboards .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 63rem) {
+    #scoreboards .container {
+        width: 30%;
+    }
+}
+
+#scoreboards .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem 0;
+}
+
+#scoreboards .container .scoreboard h3 {
+    color: #fff;
+    font-family: Verdana;
+    text-align: center;
+    font-size: 2rem;
     margin: 0;
 }
 
-.container {
+@media (min-width: 63rem) {
+    #scoreboards .container .scoreboard h3 {
+        font-size: 3rem;
+    }
+}
+
+#scoreboards .container .scoreboard .points {
+    font-family: Cursed Timer ULiL;
+    background-color: #111827;
+    width: 100%;
+    height: 7.5rem;
+    color: #F94F6D;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    font-size: 5rem;
+    padding-top: 1rem;
+    margin: .5rem 0 .8rem;
+}
+
+#scoreboards .container .scoreboard .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 .5rem;
+}
+
+#scoreboards .container .scoreboard .buttons button {
+    border: 2px solid #F3F4F6;
+    background: transparent;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: 1.2rem;
+    font-family: Cursed Timer ULiL;
+    color: #F3F4F6;
+    border-radius: 0.4rem;
+}
+
+#scoreboards .container .scoreboard .buttons button:hover {
+    background: #F3F4F6;
+    color: #111827;
+    cursor: pointer;
+}
+
+#scoreboards p {
+    text-align: center;
+    font-family: Verdana;
+    color: #E0F2FE;
+    font-size: .7rem;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+#matchesText {
+    color: #7DD3FC;
+    font-weight: bold;
+}
+
+#scoreboards .game-buttons {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: .5rem;
+}
+@media (min-width: 63rem) {
+    #scoreboards .game-buttons {
+        width: 30%;
+        flex-direction: row;
+    }
+}
+.game-buttons button {
+    font-family: Verdana;
+    height: 4rem;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    color: #111827;
+    cursor: pointer;
+    font-weight: bold;
+}
+.game-buttons button:hover {
+    color: #F3F4F6;
+}
+.game-buttons button.btn-save-match {
+    background-color: #10B981;
+}
+.game-buttons button.btn-save-match:hover {
+    background-color: #047857;
+}
+.game-buttons button.btn-new-game {
+    background-color: #E11D48;
+}
+.game-buttons button.btn-new-game:hover {
+    background-color: #BE123C;
 }
