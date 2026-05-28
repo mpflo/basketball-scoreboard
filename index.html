@@ -9,24 +9,24 @@
     <title>Basketball Scoreboard</title>
 </head>
 <body>
-    <section id="scoreboard">
+    <section id="scoreboards">
         <div class="container">
-            <div id="home">
+            <div class="scoreboard">
                 <h3>HOME</h3>
-                <span class="points" id="home-points"></span>
+                <span class="points">0</span>
                 <div class="buttons">
-                    <button onclick="plusOne()">+1</button>
-                    <button onclick="plusTwo()">+2</button>
-                    <button onclick="plusThree()">+3</button>
+                    <button onclick="plusOne(this)">+1</button>
+                    <button onclick="plusTwo(this)">+2</button>
+                    <button onclick="plusThree(this)">+3</button>
                 </div>
             </div>
-            <div id="guest">
+            <div class="scoreboard">
                 <h3>GUEST</h3>
-                <span class="points" id="guest-points"></span>
+                <span class="points">0</span>
                 <div class="buttons">
-                    <button onclick="plusOne()">+1</button>
-                    <button onclick="plusTwo()">+2</button>
-                    <button onclick="plusThree()">+3</button>
+                    <button onclick="plusOne(this)">+1</button>
+                    <button onclick="plusTwo(this)">+2</button>
+                    <button onclick="plusThree(this)">+3</button>
                 </div>
             </div>
         </div>
