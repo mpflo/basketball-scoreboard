@@ -1,6 +1,3 @@
-let scoreboard = document.getElementsByClassName(".scoreboard")
-
-
 function plusOne(botao) {
     const scoreboard = botao.closest(".scoreboard")
 
