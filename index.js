@@ -1,3 +1,5 @@
+let matches = document.getElementById("matchesText")
+
 function plusOne(botao) {
     const scoreboard = botao.closest(".scoreboard")
 
@@ -23,9 +25,20 @@ function plusThree(botao) {
 }
 
 function newGame() {
-    const allScoreboards = document.querySelectorAll(".points")
-    
-    for (let i = 0; i < allScoreboards.length; i++) {
-        allScoreboards[i].textContent = 0        
+    location.reload()
+}
+
+function saveMatch() {
+    const scoreboards =  document.querySelectorAll(".points")
+
+    const home = scoreboards[0].textContent
+    const guest = scoreboards[1].textContent
+
+    const result = "Home: " + home + " X " + "Guest: " + guest
+
+    matches.textContent += result
+
+    for (let i = 0; i < scoreboards.length; i++) {
+        scoreboards[i].textContent = 0
     }
 }
