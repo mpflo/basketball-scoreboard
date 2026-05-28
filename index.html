@@ -13,29 +13,29 @@
         <div class="container">
             <div id="home">
                 <h3>HOME</h3>
-                <span class="points">
+                <span class="points" id="home-points">
                     0
                 </span>
                 <div class="buttons">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="maisUm()">+1</button>
+                    <button onclick="maisDois()">+2</button>
+                    <button onclick="maisTres()">+3</button>
                 </div>
             </div>
-            <div id="guest">
+            <div id="guest" id="guest-points">
                 <h3>GUEST</h3>
                 <span class="points">
                     0
                 </span>
                 <div class="buttons">
-                    <button>+1</button>
-                    <button>+2</button>
-                    <button>+3</button>
+                    <button onclick="maisUm()">+1</button>
+                    <button onclick="maisDois()">+2</button>
+                    <button onclick="maisTres()">+3</button>
                 </div>
             </div>
         </div>
 
-        <button>NEW GAME</button>
+        <button class="btn-new-game" onclick="newGame()">NEW GAME</button>
     </section>
 
     <script src="index.js"></script>
